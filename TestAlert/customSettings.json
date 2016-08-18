@@ -1,0 +1,31 @@
+﻿{
+  "azureStorage": {
+    "account": "msdnalert",
+    "key": "***",
+    "connectionString": "***",
+    "queue": "task"
+
+  },
+
+  "msdn_zhcn": [
+    {
+      "emailsettings": {
+        "from": [ "support-v-jayao@hotmail.com" ],
+        "to": [ "v-jayao@microsoft.com" ],
+        "cc": [ "Jie.Rong@microsoft.com" ]
+      },
+      "link": "https://social.msdn.microsoft.com/Forums/zh-CN/home?forum=windowsazurezhchs&amp;filter=alltypes&amp;sort=firstpostdesc",
+      "container": "msdnzhcn",
+      "blob": {
+        "history": "history.txt",
+        "current": "current.txt"
+      }
+    }
+  ],
+
+
+  "sendgridSettings": {
+    "account": "azure_1db5655b318478c989eba8beed80d69a@azure.com",
+    "key": "***"
+  }
+}

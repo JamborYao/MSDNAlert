@@ -1,0 +1,8 @@
+﻿{
+  "azure": {
+    "storageAccount": "msdnja",
+    "stroageKey": "1C5Dw0UKhKCP7D8vVA2oRYGsHVmiUYOZUeqWCjtfqPGK7gCS+QtWVOroupeLvEn3zgOfM0AeqVxbQdAINA/bFA==",
+    "container": "temp"
+     
+  }
+}
