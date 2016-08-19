@@ -26,6 +26,8 @@ namespace Log
         public string Container { get; set; }
         [JsonProperty(PropertyName = "blob")]
         public Blobs Blob { get; set; }
+        [JsonProperty(PropertyName = "queue")]
+        public string Queue { get; set; }
     }
     public class EmailSetting {
         [JsonProperty(PropertyName = "from")]
@@ -46,8 +48,7 @@ namespace Log
         [JsonProperty(PropertyName = "connectionString")]
         public string ConnectionString { get; set; }
        
-        [JsonProperty(PropertyName = "queue")]
-        public string  Queue { get; set; }
+      
     }
     public class SendGridInit {
         [JsonProperty(PropertyName="account")]

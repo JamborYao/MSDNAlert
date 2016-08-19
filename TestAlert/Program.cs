@@ -30,9 +30,9 @@ namespace TestAlert
 
                     var result = handle.CompareFiles(history, current);
                     handle.CopyToHistory(history,current);
-                    if (result != "no history result")
+                    if (result != "no history result"&&!string.IsNullOrEmpty(result))
                     {
-                        handle.InsertToQueue(result);
+                        handle.InsertToQueue(result,forum.Queue);
                     }
                 }          
                

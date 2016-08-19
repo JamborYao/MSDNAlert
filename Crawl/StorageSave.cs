@@ -109,11 +109,11 @@ namespace Crawl
            
         }
 
-        public void InsertToQueue(string message)
+        public void InsertToQueue(string message,string queueName)
         {
             account = CloudStorageAccount.Parse(azureStorageConnecionstring);
             var queueClient = account.CreateCloudQueueClient();
-            var queue = queueClient.GetQueueReference("task");
+            var queue = queueClient.GetQueueReference(queueName);
             queue.CreateIfNotExists();
             CloudQueueMessage queueMessage = new CloudQueueMessage(message);
             queue.AddMessage(queueMessage);

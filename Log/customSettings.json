@@ -2,8 +2,7 @@
   "azureStorage": {
     "account": "msdnalert",
     "key": "***",
-    "connectionString": "***",
-    "queue": "task"
+    "connectionString": "***"  
 
   },
 
@@ -11,15 +10,16 @@
     {
       "emailsettings": {
         "from": [ "support-v-jayao@hotmail.com" ],
-        "to": [ "v-jayao@microsoft.com" ],
-        "cc": [ "Jie.Rong@microsoft.com" ]
+        "to": [ "Jambor Yao (Pactera Technologies Inc) <v-jayao@microsoft.com>" ],
+        "cc": [  ] //[ "Jie.Rong@microsoft.com" ]
       },
       "link": "https://social.msdn.microsoft.com/Forums/zh-CN/home?forum=windowsazurezhchs&amp;filter=alltypes&amp;sort=firstpostdesc",
       "container": "msdnzhcn",
       "blob": {
         "history": "history.txt",
         "current": "current.txt"
-      }
+      },
+      "queue": "task"
     }
   ],
 
